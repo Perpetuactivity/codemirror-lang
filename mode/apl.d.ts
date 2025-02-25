@@ -1,2 +1,7 @@
-import {StreamParser} from "@codemirror/language"
-export declare const apl: StreamParser<unknown>
+import { LRLanguage, LanguageSupport } from "@codemirror/language";
+
+declare const aplLanguage: LRLanguage;
+
+declare function apl(): LanguageSupport;
+
+export { apl, aplLanguage };
